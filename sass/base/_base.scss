@@ -1,0 +1,48 @@
+@use "../abstracts/variables";
+@use "./typography";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: typography.$base-font;
+  font-size: typography.$base-font-size;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: typography.$body-font-size;
+  background-color: variables.$background-color;
+}
+
+.headline {
+  font-size: typography.$headline-font-size;
+  font-weight: 700;
+  color: typography.$text-high-color;
+  text-align: center;
+  margin-top: 0;
+}
+
+.subheadline {
+  font-size: typography.$subheadline-font-size;
+  font-weight: 600;
+  color: typography.$text-medium-color;
+}
+
+.title {
+}
+
+.subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: typography.$text-low-color;
+  margin: 0.5rem 0;
+}
