@@ -1,0 +1,27 @@
+{
+  "name": "lensey-frontend",
+  "version": "1.0.0",
+  "description": "Front end for lensey new app",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harounach/lensey-frontend.git"
+  },
+  "keywords": [
+    "Lensey",
+    "News"
+  ],
+  "author": "Haroun Ach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harounach/lensey-frontend/issues"
+  },
+  "homepage": "https://github.com/harounach/lensey-frontend#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
