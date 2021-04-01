@@ -8,6 +8,12 @@
   padding: 0;
   display: flex;
 
+  // form__section
+  &__section {
+    margin: 0 0 0 0.5rem;
+    padding: 0;
+  }
+
   // seach-form__input-control
   &__input-control {
     width: 100%;
