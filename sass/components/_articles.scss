@@ -1,0 +1,37 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+
+// featured
+.featured {
+  // featured__img
+  &__img {
+  }
+
+  // featured__text
+  &__text {
+  }
+
+  // featured__title
+  &__title {
+  }
+}
+
+// articles
+.articles {
+}
+
+// article
+.article {
+  // article__img
+  &__img {
+  }
+
+  // article__title
+  &__title {
+  }
+
+  // article__publishedAt
+  &__publishedAt {
+  }
+}
