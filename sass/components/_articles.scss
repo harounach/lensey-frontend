@@ -17,7 +17,9 @@
   @include mixins.surface-shadow;
   transition: box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     // box-shadow
     @include mixins.surface-hover-shadow;
   }
@@ -97,7 +99,9 @@
   @include mixins.surface-shadow;
   transition: box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     // box-shadow
     @include mixins.surface-hover-shadow;
   }
