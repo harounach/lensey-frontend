@@ -57,3 +57,10 @@
     @content;
   }
 }
+
+// large desktop
+@mixin large-desktop {
+  @media screen and (min-width: map.get(variables.$breakpoints, "large-desktop")) {
+    @content;
+  }
+}

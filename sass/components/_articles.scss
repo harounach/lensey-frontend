@@ -71,6 +71,11 @@
     @include mixins.desktop {
       height: 48%;
     }
+
+    // large desktop
+    @include mixins.large-desktop {
+      height: 55%;
+    }
   }
 
   // featured__img
@@ -104,6 +109,11 @@
     // desktop
     @include mixins.desktop {
       height: 52%;
+    }
+
+    // large desktop
+    @include mixins.large-desktop {
+      height: 45%;
     }
   }
 
