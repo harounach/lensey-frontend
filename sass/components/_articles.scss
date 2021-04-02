@@ -75,40 +75,64 @@
 
 // article
 .article {
-  display: block;
+  display: flex;
   width: 100%;
+  height: 144px;
   text-decoration: none;
   background-color: variables.$surface-color;
   color: variables.$on-surface-color;
 
-  &:hover &__title,
-  &:hover &__publishedAt {
-    color: variables.$primary-color;
-  }
-
   // box-shadow
   @include mixins.surface-shadow;
 
+  &:hover &__title {
+    color: variables.$primary-color;
+  }
+
   // article__text
   &__text {
-    padding: 1rem;
+    width: 60%;
+    height: 100%;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+
+  // article__img-wrapper
+  &__img-wrapper {
+    width: 40%;
+    height: 100%;
   }
 
   // article__img
   &__img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   // article__title
   &__title {
-    color: typography.$text-medium-color;
+    color: typography.$text-high-color;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   // article__publishedAt
   &__publishedAt {
-    color: typography.$text-low-color;
+    display: block;
+    background-color: variables.$primary-color;
+    color: variables.$on-primary-color;
+    align-self: flex-end;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    border-top-left-radius: 8px;
   }
 }
