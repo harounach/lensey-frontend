@@ -16,6 +16,11 @@
   // box-shadow
   @include mixins.surface-shadow;
 
+  &:hover &__title,
+  &:hover &__publishedAt {
+    color: variables.$primary-color;
+  }
+
   // large tablet
   @include mixins.large-tablet {
     width: 90%;
@@ -76,6 +81,11 @@
   background-color: variables.$surface-color;
   color: variables.$on-surface-color;
 
+  &:hover &__title,
+  &:hover &__publishedAt {
+    color: variables.$primary-color;
+  }
+
   // box-shadow
   @include mixins.surface-shadow;
 
@@ -94,9 +104,11 @@
 
   // article__title
   &__title {
+    color: typography.$text-medium-color;
   }
 
   // article__publishedAt
   &__publishedAt {
+    color: typography.$text-low-color;
   }
 }
