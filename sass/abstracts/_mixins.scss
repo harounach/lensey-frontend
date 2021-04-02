@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "./variables";
+
 @mixin btn-shadow {
   box-shadow: 1px 4px 18px 0px rgba(0, 0, 0, 0.23);
 }
@@ -10,4 +13,10 @@
   box-shadow: 0 0.9px 1.3px -6px rgba(0, 0, 0, 0.045),
     0 2.5px 3.6px -6px rgba(0, 0, 0, 0.065),
     0 6px 8.7px -6px rgba(0, 0, 0, 0.085), 0 20px 29px -6px rgba(0, 0, 0, 0.13);
+}
+
+@mixin tablet {
+  @media screen and (min-width: map.get(variables.$breakpoints, "tablet")) {
+    @content;
+  }
 }

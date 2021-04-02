@@ -11,3 +11,9 @@ $on-secondary-color: #ffffff;
 $on-surface-color: #000000;
 $on-background-color: #000000;
 $on-error-color: #ffffff;
+
+// breakpoints
+$breakpoints: (
+  tablet: 600px,
+  large-tablet: 720px,
+);
