@@ -109,6 +109,11 @@
       width: 100%;
       height: 45%;
     }
+
+    // large tablet
+    @include mixins.large-tablet {
+      height: 48%;
+    }
   }
 
   // article__img-wrapper
@@ -120,6 +125,11 @@
     @include mixins.tablet {
       width: 100%;
       height: 55%;
+    }
+
+    // large tablet
+    @include mixins.large-tablet {
+      height: 52%;
     }
   }
 
