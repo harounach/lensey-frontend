@@ -15,8 +15,37 @@
     0 6px 8.7px -6px rgba(0, 0, 0, 0.085), 0 20px 29px -6px rgba(0, 0, 0, 0.13);
 }
 
+// tablet
 @mixin tablet {
   @media screen and (min-width: map.get(variables.$breakpoints, "tablet")) {
+    @content;
+  }
+}
+
+// large tablet
+@mixin large-tablet {
+  @media screen and (min-width: map.get(variables.$breakpoints, "large-tablet")) {
+    @content;
+  }
+}
+
+// extra large tablet
+@mixin xlarge-tablet {
+  @media screen and (min-width: map.get(variables.$breakpoints, "xlarge-tablet")) {
+    @content;
+  }
+}
+
+// small desktop
+@mixin small-desktop {
+  @media screen and (min-width: map.get(variables.$breakpoints, "small-desktop")) {
+    @content;
+  }
+}
+
+// desktop
+@mixin desktop {
+  @media screen and (min-width: map.get(variables.$breakpoints, "desktop")) {
     @content;
   }
 }
