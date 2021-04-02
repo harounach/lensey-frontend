@@ -55,6 +55,11 @@
   @include mixins.tablet {
     grid-template-columns: 1fr 1fr;
   }
+
+  // large tablet
+  @include mixins.large-tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 // article
