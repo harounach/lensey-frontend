@@ -89,6 +89,12 @@
     color: variables.$primary-color;
   }
 
+  // tablet
+  @include mixins.tablet {
+    flex-direction: column;
+    height: auto;
+  }
+
   // article__text
   &__text {
     width: 60%;
@@ -97,12 +103,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    // tablet
+    @include mixins.tablet {
+      width: 100%;
+      height: 45%;
+    }
   }
 
   // article__img-wrapper
   &__img-wrapper {
     width: 40%;
     height: 100%;
+
+    // tablet
+    @include mixins.tablet {
+      width: 100%;
+      height: 55%;
+    }
   }
 
   // article__img
