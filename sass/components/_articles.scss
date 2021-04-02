@@ -2,6 +2,23 @@
 @use "../abstracts/mixins";
 @use "../base/typography";
 
+// featured-articles
+.featured-articles {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
+
+  // tablet
+  @include mixins.tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  // large tablet
+  @include mixins.large-tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 // featured
 .featured {
   width: 100%;
@@ -12,6 +29,7 @@
   padding: 0;
   background-color: variables.$surface-color;
   color: variables.$on-surface-color;
+  position: relative;
 
   // box-shadow
   @include mixins.surface-shadow;
@@ -29,10 +47,15 @@
     color: variables.$primary-color;
   }
 
-  // large tablet
-  @include mixins.large-tablet {
+  // tablet
+  @include mixins.tablet {
     width: 90%;
     margin: auto;
+  }
+
+  // large tablet
+  @include mixins.large-tablet {
+    max-width: 450px;
   }
 
   // featured__img
@@ -61,6 +84,17 @@
     font-size: 0.75rem;
     align-self: flex-end;
     color: typography.$text-high-color;
+  }
+
+  // featured__tag
+  &__tag {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: variables.$secondary-color;
+    color: variables.$on-secondary-color;
+    padding: 0.5rem;
+    text-transform: uppercase;
   }
 }
 
