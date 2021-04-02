@@ -40,10 +40,14 @@ body {
   }
 
   // large tablet
-  // tablet
-  @include mixins.tablet {
-    width: 90%;
+  @include mixins.large-tablet {
+    width: 95%;
     margin: auto;
+  }
+
+  // extra large tablet
+  @include mixins.xlarge-tablet {
+    width: 80%;
   }
 }
 
@@ -57,10 +61,14 @@ body {
   }
 
   // large tablet
-  // tablet
-  @include mixins.tablet {
-    width: 90%;
+  @include mixins.large-tablet {
+    width: 95%;
     margin: auto;
+  }
+
+  // extra large tablet
+  @include mixins.xlarge-tablet {
+    width: 80%;
   }
 }
 

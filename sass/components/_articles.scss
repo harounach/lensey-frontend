@@ -71,6 +71,11 @@
   @include mixins.large-tablet {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  // desktop
+  @include mixins.desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 // article
@@ -114,6 +119,11 @@
     @include mixins.large-tablet {
       height: 48%;
     }
+
+    // small desktop
+    @include mixins.small-desktop {
+      height: 40%;
+    }
   }
 
   // article__img-wrapper
@@ -130,6 +140,11 @@
     // large tablet
     @include mixins.large-tablet {
       height: 52%;
+    }
+
+    // small desktop
+    @include mixins.small-desktop {
+      height: 60%;
     }
   }
 
