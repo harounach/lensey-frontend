@@ -30,7 +30,7 @@ body {
   padding: 0;
 }
 
-.content-section {
+.featured-content {
   width: 100%;
   padding: 1rem;
   // tablet
@@ -42,7 +42,24 @@ body {
   // large tablet
   // tablet
   @include mixins.tablet {
-    width: 80%;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.articles-content {
+  width: 100%;
+  padding: 1rem;
+  // tablet
+  @include mixins.tablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  // large tablet
+  // tablet
+  @include mixins.tablet {
+    width: 90%;
     margin: auto;
   }
 }
