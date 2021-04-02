@@ -5,3 +5,9 @@
 @mixin btn-hover-shadow {
   box-shadow: 1px 4px 18px 4px rgba(0, 0, 0, 0.23);
 }
+
+@mixin surface-shadow {
+  box-shadow: 0 0.9px 1.3px -6px rgba(0, 0, 0, 0.045),
+    0 2.5px 3.6px -6px rgba(0, 0, 0, 0.065),
+    0 6px 8.7px -6px rgba(0, 0, 0, 0.085), 0 20px 29px -6px rgba(0, 0, 0, 0.13);
+}

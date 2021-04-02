@@ -7,7 +7,15 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 0;
+  background-color: variables.$surface-color;
+  color: variables.$on-surface-color;
+
+  // box-shadow
+  @include mixins.surface-shadow;
+
   // featured__img
   &__img {
     display: block;
@@ -16,11 +24,6 @@
 
   // featured__text
   &__text {
-    background-color: rgba($color: variables.$on-background-color, $alpha: 0.7);
-    color: variables.$background-color;
-    position: absolute;
-    bottom: 0;
-    right: 0;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -31,24 +34,42 @@
     font-weight: 700;
     margin: 0;
     padding: 0;
-    color: rgba($color: #ffffff, $alpha: 0.87);
+    color: typography.$text-high-color;
   }
 
   // featured__publishedAt
   &__publishedAt {
     font-size: 0.75rem;
     align-self: flex-end;
-    color: rgba($color: #ffffff, $alpha: 0.87);
+    color: typography.$text-high-color;
   }
 }
 
 // articles
 .articles {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
 }
 
 // article
 .article {
-  padding: 1rem;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  background-color: variables.$surface-color;
+  color: variables.$on-surface-color;
+
+  // box-shadow
+  @include mixins.surface-shadow;
+
+  // article__text
+  &__text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
   // article__img
   &__img {
     display: block;

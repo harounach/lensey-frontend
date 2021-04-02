@@ -30,6 +30,8 @@ body {
 }
 
 .content-section {
+  width: 100%;
+  padding: 1rem;
 }
 
 .headline {
@@ -54,5 +56,4 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: typography.$text-low-color;
-  margin: 1rem;
 }
